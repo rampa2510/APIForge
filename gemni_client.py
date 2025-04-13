@@ -1,6 +1,7 @@
 import google.generativeai as genai
 
 from config import GEMINI_API_KEY, MAX_OUTPUT_TOKENS, TEMPERATURE
+from prompts import SYSTEM_PROMPT
 
 genai.configure(api_key=GEMINI_API_KEY)
 
@@ -10,4 +11,5 @@ model = genai.GenerativeModel(
         "temperature": TEMPERATURE,
         "max_output_tokens": MAX_OUTPUT_TOKENS,
     },
+    system_instruction=SYSTEM_PROMPT,
 )
