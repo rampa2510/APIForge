@@ -18,7 +18,6 @@ if not GEMINI_API_KEY:
     )
 
 # Gemini API settings
-GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 TEMPERATURE = 0.7
 MAX_OUTPUT_TOKENS = 1024
 TOP_P = 0.95
